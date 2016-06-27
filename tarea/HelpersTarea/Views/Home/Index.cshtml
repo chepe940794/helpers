@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    var lista = new string[] {"Prueba de Helpers ", "tarea", "Iphone 7 - mexico 0"};
+    var label = new string[] {"prueba de label"};
+    var text = new string[] { "prueba de text" };
+    var check = new string[] { "prueba de check" };
+    var box = new string[] { "prueba de box" };
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a>
+    </p>
+</div>
+
+@Html.List(lista)
+@Html.Label(label[0])
+@Html.TextArea(text[0])
+@Html.CheckBox(check[0])
+@Html.TextBox(box[0])
+
